@@ -28,6 +28,12 @@
   color: #61dafb;
 }
 
+canvas {
+  position: relative;
+  animation: myfirst 5s 2;
+  animation-direction: alternate;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +41,12 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@keyframes myfirst {
+  0%   { left: 0px; top: 0px;}
+  25%  {left: 200px; top: 0px;}
+  50%  {left: 200px; top: 200px;}
+  75%  { left: 0px; top: 200px;}
+  100% { left: 0px; top: 0px;}
 }

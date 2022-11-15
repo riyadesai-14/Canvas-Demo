@@ -17,6 +17,11 @@ function CanvasDemo() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
+    // canvas.style.position = "absolute";
+    // canvas.style.left = 0;
+    // canvas.style.top = 0;
+    // canvas.style.zIndex = 100000;
+
     document.body.appendChild(canvas); //Append canvas to body element
     var context = canvas.getContext("2d");
     //Draw rectangle
@@ -25,6 +30,7 @@ function CanvasDemo() {
     context.fill();
     //Draw circle
     context.beginPath();
+  
     context.lineWidth = "4";
     context.strokeStyle = "green";
     context.arc(width / 2, height / 2, 80, 0, 2 * Math.PI);
